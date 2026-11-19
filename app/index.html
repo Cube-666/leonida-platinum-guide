@@ -3,23 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>Leonida Platinum Guide — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="The offline guide and tracker for all 55 GTA 6 trophies: checklist, roadmap to the platinum, missables, and a cited guide for every trophy.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="top">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">L</div>
+    <div>
+      <h1>Leonida Platinum Guide</h1>
+      <p class="sub">GTA 6 &middot; PlayStation 5 &middot; 55 trophies &middot; 1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; 28 hidden on PSN</p>
+    </div>
+  </div>
+  <div class="progress" id="progress" aria-label="Progress to platinum"></div>
 </header>
-<div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
-  <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-</div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <a href="#/" data-view="checklist">Checklist</a>
+  <a href="#/roadmap" data-view="roadmap">Roadmap</a>
+  <a href="#/missables" data-view="missables">Missables <span class="pill" id="missable-count"></span></a>
+  <a href="#/save" data-view="save">Save &amp; settings</a>
+</nav>
+<main id="view"></main>
+<footer class="foot">
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games, Sony or PlayStation. Trophy names and descriptions are shown as PlayStation publishes them; every guide is written in our own words and cites its sources. Works fully offline — no network requests at run time.</p>
+  <p>Sources: the official trophy list on <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> &middot; PSN progress targets on <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a> &middot; <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx trophy guide &amp; roadmap</a> &middot; <a href="https://gta-zone.com/news/gta-6-trophies-achievements/">GTA-Zone</a> &middot; <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag</a></p>
+</footer>
 <script type="module" src="app.js"></script>
 </body>
 </html>
